@@ -4,7 +4,9 @@ on:
   push:
   pull_request:
     types: [opened, synchronize, reopened, labeled]
-
+  watch:
+    types: started
+    
 jobs:
   build:
     # Skip 'labeled' events that didn't add the 'ci' label
